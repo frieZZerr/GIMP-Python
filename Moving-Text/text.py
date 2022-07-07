@@ -34,7 +34,7 @@ def Text( image, text, font, font_size ):
 	text_layer = pdb.gimp_text_layer_new( image, text, font, font_size, 0 )
 
 	pdb.gimp_image_insert_layer( image, text_layer, None, 0 )
-	# Setting it's size to image size and setting it's justification to centered
+	# Setting it's size to image size and it's justification to centered
 	pdb.gimp_text_layer_resize( text_layer, width, height )
 	pdb.gimp_text_layer_set_justification( text_layer, 2 )
 	# Alternatively we can use this:
