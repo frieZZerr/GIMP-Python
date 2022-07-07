@@ -12,7 +12,7 @@ height = 50
 darkgreen = ( 0, 100, 0, 1.0 )	#	Background
 green = ( 0, 255, 0, 1.0 )		#	Foreground
 
-#	Creates new image ¯\_(ツ)_/¯
+#	Creates new image
 def NewImage( wid, hig ):
 	image = pdb.gimp_image_new( wid, hig, 0 )
 	display = pdb.gimp_display_new( image )
