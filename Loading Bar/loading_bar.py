@@ -41,15 +41,19 @@ img = NewImage( width, height )
 FillRect( img, 0, 0, width, height, darkgreen )
 
 pdb.gimp_image_undo_disable
+
+#	Number of layers to be created
+lay_num = 10
+
 #	This variable defines how fast
 #		the loading bar will proceed.
-i = width/10
+i = width/lay_num
 
 #	Filling up the selection "frame by frame":
 #		Every time filling bigger selection
 while i <= width:
 	FillRect( img, 0, 0, i, height, green )
-	i = i + ( width/10 )
+	i = i + ( width/lay_num )
 pdb.gimp_image_undo_enable
 
 #	SaveGIF( img, "YOUR_PATH/loading_bar.gif", 50 )
