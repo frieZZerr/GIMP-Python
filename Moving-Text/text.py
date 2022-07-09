@@ -4,6 +4,9 @@ import math
 import colorsys
 from gimpfu import *
 
+#	Set your project path here
+YOUR_PATH = ""
+
 width  = 350
 height = 50
 
@@ -68,4 +71,7 @@ font = "Lato Bold"
 font_size = 50
 
 Text( img, text, font, font_size )
-SaveGIF( img, "D:/FAIS/4_sem_2022/Grafika/CWICZENIA/Zadanie 7/text.gif", 100 )
+
+frame_rate = 100
+
+SaveGIF( img, YOUR_PATH+"/text,gif", frame_rate )
