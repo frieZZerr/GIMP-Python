@@ -61,4 +61,4 @@ pdb.gimp_image_undo_enable
 
 frame_rate = 50
 
-SaveGIF( img, "YOUR_PATH/loading_bar.gif", frame_rate )
+SaveGIF( img, YOUR_PATH+"/loading_bar.gif", frame_rate )
