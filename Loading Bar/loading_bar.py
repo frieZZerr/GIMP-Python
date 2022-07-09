@@ -2,6 +2,9 @@ import math
 import colorsys
 from gimpfu import *
 
+#	Set your project path here
+YOUR_PATH = ""
+
 #	Declaring size of the loading bar:
 #		This one is horizontal but a
 #		vertical one looks good aswell
@@ -56,4 +59,6 @@ while i <= width:
 	i = i + ( width/lay_num )
 pdb.gimp_image_undo_enable
 
-#	SaveGIF( img, "YOUR_PATH/loading_bar.gif", 50 )
+frame_rate = 50
+
+SaveGIF( img, "YOUR_PATH/loading_bar.gif", frame_rate )
